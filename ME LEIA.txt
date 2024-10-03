@@ -1,0 +1,1 @@
+Não esqueça de rodar o 'php artisan storage:link'

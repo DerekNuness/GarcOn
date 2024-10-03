@@ -1,0 +1,77 @@
+@import url(../../node_modules/bootstrap/dist/css/bootstrap.min.css);
+
+.content {
+    min-height: 100vh;
+    height: 100vh;
+    max-height: 100vh;
+    overflow-y: scroll;
+}
+
+.input-minus-plus {
+    width: 3rem;
+}
+
+.img-produto {
+    width: 8rem;
+    height: 8rem;
+    object-fit: cover;
+}
+.not-found {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.navegacao {
+    min-height: 100vh;
+    height: 100vh;
+    transition: all .5s ease-in-out;
+}
+
+.navegacao.ativa {
+    width: 300px;
+}
+
+.navegacao:not(.ativa) {
+    width: 80px;
+    /* overflow: hidden; */
+}
+
+.navegacao:not(.ativa) > ul > li > a > .menu-txt, .navegacao:not(.ativa) > div > h1, .navegacao:not(.ativa) > #btn-logout > .menu-txt {
+    display: none;
+    transition: all .5s ease-in-out;
+}
+
+.nav-link, #btn-logout {
+    white-space: nowrap !important;
+}
+
+.navegacao:not(.ativa) > div {
+    justify-content: center;
+}
+
+#menu-btn {
+    aspect-ratio: 1/1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    right: -12px;
+    top: 25px;
+    transition: all .5s;
+}
+
+.navegacao.ativa > #menu-btn {
+    transform: rotate(180deg);
+}
+
+.imagem_produto {
+    aspect-ratio: 1/1;
+    width: 200px;
+}
+
+/* .col {
+    height: 143px;
+} */
